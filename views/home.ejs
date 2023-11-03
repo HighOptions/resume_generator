@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mainpage</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <section class="page1">
+        <div class="bg-image"></div>
+        <nav class="navbar">
+            <ul>
+                <img src="assets/home.png">
+                <h3>RESUME GENERATOR</h3>
+                <form action="/start" method="post" id="start-form">
+                    <button class="start" type="submit">START NOW</button>
+                </form>
+            </ul>
+        </nav>
+        <div class="main-heading">
+            <h1>Need Resume?</h1>
+            <h2>I gotchu bro!</h2>
+            <p> Just fill the form and it will generate a resume for u</p>
+            <form action="/start" method="post" id="start-form">
+                <button class="start" type="submit">LETS GOO!!!!</button>
+            </form>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function () {
+    $('#start-form').submit(function (event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+        $.post('/start', function (data) {
+            // Handle the response or redirect to another page
+            // In this case, we'll just assume the response is HTML content and replace the current page content
+            $('html').html(data);
+        });
+    });
+});
+
+    </script>
+</body>
+</html>

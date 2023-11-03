@@ -1,0 +1,65 @@
+<%-include("partials/header.ejs")  %>
+
+    <style>
+        @media print {
+            /* Add CSS for printing here */
+            body {
+                background: white; /* Set a white background for printing */
+            }
+            #btn-print {
+                display: none; /* Hide the download button when printing */
+            }
+        }
+    </style> 
+</head>
+<body>
+    <section id="resume">
+    <div class="contact">
+        <h1><%= fullName %> | <%=profession  %></h1>
+        <P><%= phoneNumber %> | <%= email %></P>
+        <p><%= socialLink1 %></p>
+        <p><%= socialLink2 %></p>
+    </div>
+    <div class="line"></div>
+    <div class="summary">
+        <h2>PROFESSIONAL SUMMARY</h2>
+        <p> <%= professionalSummary %></p>
+    </div>
+    <div class="line"></div>
+    <div class="education">
+        <h2>EDUCATION</h2>
+        <h3><%= educationDate1 %></h3>
+        <p><%= educationPlace1 %></p>
+        <h3><%= educationDate2 %></h3>
+        <p><%= educationPlace2 %></p>
+        
+    </div>
+    <div class="line"></div>
+    <div class="works">
+        <h2> WORKS | PROJECTS | EXPERIENCE</h2>
+        <h3><%= project1name %></h3>
+        <p><%= project1 %></p>
+        <h3><%= project2name %></h3>
+        <p><%= project2 %></p>
+    </div>
+    <div class="line"></div>
+    <div class="skills">
+        <h2>SKILLS</h2>
+        <ul>
+            <li><%= skill1 %></li>
+            <li><%= skill2 %></li>
+            <li><%= skill3 %></li>  
+        </ul>
+    </div>
+    <div class="line"></div>
+</section>
+    <button id="btn-print">DOWNLOAD</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            $('#btn-print').click(function () {
+                window.print(); // This will trigger the browser's print dialog.
+            });
+        });
+    </script>
+<%-include("partials/footer.ejs")  %>

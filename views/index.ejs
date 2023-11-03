@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <div class="bg"></div>
+    <form action="/submit" method="post">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+        <br><br>
+
+        <label for="profession">Profession:</label>
+        <input type="text" id="profession" name="profession" required>
+        <br><br>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+        <br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="socialLink1">Social Link 1:</label>
+        <input type="url" id="socialLink1" name="socialLink1">
+        <br><br>
+
+        <label for="socialLink2">Social Link 2:</label>
+        <input type="url" id="socialLink2" name="socialLink2">
+        <br><br>
+
+        <label for="professionalSummary">Professional Summary:</label>
+        <textarea id="professionalSummary" name="professionalSummary" rows="4" required></textarea>
+        <br><br>
+
+        <label for="education">Education:</label>
+        <div id="education">
+            <div class="education-entry">
+                <label for="educationDate">Date (From - To):</label>
+                <input type="text" id="educationDate" name="educationDate1" required><br>
+                <label for="educationPlace">Place and Name:</label>
+                <input type="text" id="educationPlace" name="educationPlace1" required><br>
+                <label for="educationDate">Date (From - To)(To add other):</label>
+                <input type="text" id="educationDate" name="educationDate2" required><br>
+                <label for="educationPlace">Place and Name:</label>
+                <input type="text" id="educationPlace" name="educationPlace2" required><br>
+            </div>
+            
+        </div>
+        <br><br>
+
+        <label for="projects">Project1:</label>
+        <input type="text" id="profession" name="project1name" required><br>
+        <textarea id="projects" name="project1" rows="4"></textarea>
+        <br><br>
+        <label for="projects">Project2:</label>
+        <input type="text" id="profession" name="project2name" required><br>
+        <textarea id="projects" name="project2" rows="4"></textarea>
+        <br><br>
+
+        <label for="skills">Skill1:</label>
+        <input type="text" id="profession" name="skill1" required>
+        <br><br>
+        <label for="skills">Skill2:</label>
+        <input type="text" id="profession" name="skill2" required>
+        <br><br>
+        <label for="skills">Skill3:</label>
+        <input type="text" id="profession" name="skill3" required>
+        <br><br>
+        <input type="submit" value="Submit">
+        <p>Read this before you click the submit </p>
+        <p>The next page is the preview of the resume not the actual resume, so just click the download button on the bottom to dowload it and see the pdf file for any corrections</p>
+    </form>
+</body>
+</html>

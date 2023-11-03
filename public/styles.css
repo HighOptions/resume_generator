@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact h1,p{
+    margin: 0.5%;
+    font-family: 'EB Garamond', serif;
+}
+.line {
+    border-bottom: 1px solid #888;
+    margin: 0.5%;
+  }
+.summary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.summary h2,p{
+    margin: 0.5%;
+    font-family: 'EB Garamond', serif;
+}
+p{
+    text-align: justify;
+}
+.education h2,h3,p{
+    margin: 0.5%;
+    font-family: 'EB Garamond', serif;
+}
+.education h2{
+    text-align: center;
+}
+.works h2,h3,p{
+    margin: 0.5%;
+    font-family: 'EB Garamond', serif;
+}
+.works h2{
+    text-align: center;
+}
+.skills h2{
+    text-align: center;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills h2,ul{
+    margin: 0.5%;
+    font-family: 'EB Garamond', serif;
+}
+
+
+/* CSS */
+button {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
